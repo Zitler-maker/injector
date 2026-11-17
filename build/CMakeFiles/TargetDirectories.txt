@@ -1,0 +1,5 @@
+C:/Users/Subhan/Desktop/inje/build/CMakeFiles/sample_dll.dir
+C:/Users/Subhan/Desktop/inje/build/CMakeFiles/injector.dir
+C:/Users/Subhan/Desktop/inje/build/CMakeFiles/injector_cli.dir
+C:/Users/Subhan/Desktop/inje/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/Subhan/Desktop/inje/build/CMakeFiles/ZERO_CHECK.dir

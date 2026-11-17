@@ -1,0 +1,20 @@
+^C:\USERS\SUBHAN\DESKTOP\INJE\BUILD\CMAKEFILES\07293128C55AEDCEE427D5B3F2785749\SAMPLE_DLL_DATA.CPP.RULE
+setlocal
+powershell -NoProfile -ExecutionPolicy Bypass -File C:/Users/Subhan/Desktop/inje/tools/embed_binary.ps1 -InputFile C:/Users/Subhan/Desktop/inje/build/Release/sample_dll.dll -OutputFile C:/Users/Subhan/Desktop/inje/build/generated/sample_dll_data.cpp -SymbolName kEmbeddedSampleDll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\SUBHAN\DESKTOP\INJE\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/Subhan/Desktop/inje -BC:/Users/Subhan/Desktop/inje/build --check-stamp-file C:/Users/Subhan/Desktop/inje/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

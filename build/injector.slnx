@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Solution>
+	<Configurations>
+		<BuildType Name="Debug"/>
+		<BuildType Name="Release"/>
+		<BuildType Name="MinSizeRel"/>
+		<BuildType Name="RelWithDebInfo"/>
+		<Platform Name="x64"/>
+	</Configurations>
+	<Project Path="ALL_BUILD.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="55d3d23c-f6d1-31c7-a0e5-35aa94bee992" DefaultStartup="true">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="injector.vcxproj"/>
+		<BuildDependency Project="injector_cli.vcxproj"/>
+		<BuildDependency Project="sample_dll.vcxproj"/>
+		<Build Solution="Debug|*" Project="false"/>
+		<Build Solution="Release|*" Project="false"/>
+		<Build Solution="MinSizeRel|*" Project="false"/>
+		<Build Solution="RelWithDebInfo|*" Project="false"/>
+	</Project>
+	<Project Path="ZERO_CHECK.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="ddb8cd3d-8ce7-315c-97bc-4421b1e93f8a"/>
+	<Project Path="injector.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="5f5bef18-f5e8-3c69-b878-d235072421ba">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="sample_dll.vcxproj"/>
+	</Project>
+	<Project Path="injector_cli.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="603bc22f-9bd9-37c2-92ec-62859d9b0756">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+	</Project>
+	<Project Path="sample_dll.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="b8826ff5-7b1b-3903-8883-1ce3fbc93912">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+	</Project>
+</Solution>

@@ -1,0 +1,10 @@
+^C:\USERS\SUBHAN\DESKTOP\INJE\BUILD\CMAKEFILES\D77EC096E24F3D75383FD30B4B10522E\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/Subhan/Desktop/inje -BC:/Users/Subhan/Desktop/inje/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/Subhan/Desktop/inje/build/injector.slnx
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
